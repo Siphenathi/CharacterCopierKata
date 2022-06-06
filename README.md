@@ -4,7 +4,7 @@ Write a character **copier class** that reads characters from a **source** and c
 **destination**. It must copy and write one character at a time.
 
 To do this create a [Copier class](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Copier.cs) that takes in a [ISource](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Interfaces/ISource.cs) and [IDestination](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Interfaces/IDestination.cs). [ISource](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Interfaces/ISource.cs) has one method
-**char ReadChar()** and [IDestination](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Interfaces/IDestination.cs) has one method **void WriteChar(char c)**. The [Copier class](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Copier.cs.cs) has one
+**char ReadChar()** and [IDestination](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Interfaces/IDestination.cs) has one method **void WriteChar(char c)**. The [Copier class](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Copier.cs) has one
 method **void Copy()** that when called reads from the [ISource](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Interfaces/ISource.cs) one character at a time and write to
 [IDestination](https://github.com/Siphenathi/CharacterCopierKata/blob/master/CopierKata/Interfaces/IDestination.cs) as seen in Figure 1 below.
 
