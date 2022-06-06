@@ -13,6 +13,6 @@ processing stops without writing the newline. Only the [Copier class](https://gi
 
 ## Tech Used:
 
-- [.NET 6](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-6)
+- [.NET Framework 4.7.1 ](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-6)
 - [NUnit](https://nunit.org/)
 - [NSubstitute](https://nsubstitute.github.io/help/getting-started/)
