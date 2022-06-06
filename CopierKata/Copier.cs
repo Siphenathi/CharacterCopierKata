@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using CopierKata.Interfaces;
 
 namespace CopierKata
 {
@@ -20,17 +21,21 @@ namespace CopierKata
 			if (AbleToCopy(character))
 			{
 				_destination.WriteChar(character);
-				Copy();
+				//Copy();
 			}
 		}
 
 		public void CopyMultiple(int numberOfCharactersToCopy)
 		{
 			var characters = _source.ReadChars(numberOfCharactersToCopy);
-			if (AbleToCopy(characters))
-			{
-				_destination.WriteChars(characters);
-			}
+			if (!AbleToCopy(characters)) return;
+			var charactersToCopy = characters.TakeWhile(character => character != '\n').ToArray();
+			_destination.WriteChars(charactersToCopy);
+
+			if (characters.Contains('\n'))
+				return;
+
+			//CopyMultiple(numberOfCharactersToCopy);
 		}
 
 		private static bool AbleToCopy(IReadOnlyCollection<char> characters)

@@ -1,4 +1,4 @@
-﻿namespace CopierKata
+﻿namespace CopierKata.Interfaces
 {
 	public interface IDestination
 	{
