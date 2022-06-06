@@ -42,9 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Copier.cs" />
-    <Compile Include="IDestination.cs" />
-    <Compile Include="ISource.cs" />
+    <Compile Include="Interfaces\IDestination.cs" />
+    <Compile Include="Interfaces\ISource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
